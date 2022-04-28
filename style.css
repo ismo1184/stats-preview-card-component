@@ -68,8 +68,8 @@ body {
 
 .card {
     display: flex;
-    width: 60rem;
-    height: 24.5rem;
+    max-width: 1500px;
+
 
 
 
@@ -77,15 +77,19 @@ body {
 
 .info {
     color: white;
-    max-width: 50%;
+    width: 50%;
     background-color: hsl(244, 38%, 16%);
     padding-left: 5px;
+    box-sizing: border-box;
+
 }
 
-h1 {
+.promoHeader {
     font-family: "inter", sans-serif;
     font-weight: 700;
     font-size: 1.5rem;
+    margin: 50px 70px 10px 50px;
+    line-height: 1.3;
 
 }
 
@@ -93,19 +97,59 @@ h1 {
     color: hsl(277, 64%, 61%);
 }
 
+.promoText {
+    font-family: "lexend Deca", sans-serif;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 0.8rem;
+    line-height: 1.75;
+    margin: 35px 80px 70px 50px;
+}
+
 .stats {
     display: flex;
     justify-content: space-between;
     font-family: "inter", sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    width: 65%;
+    margin: 0px 70px 40px 50px;
+}
+
+.stats .statText {
+    font-family: "lexend Deca", sans-serif;
+    font-size: 0.60rem;
+    font-weight: 400;
+    color: hsla(0, 0%, 100%, 0.422);
 
 }
+
 
 .promoPic {
     width: 50%;
     background-color: hsl(277, 64%, 61%);
-    background-image: url("/images/image-header-desktop.jpg");
+    background-image: url("images/image-header-desktop.jpg");
+    background-size: cover;
     background-blend-mode: multiply;
     background-repeat: no-repeat;
 
+}
 
+@media (max-width: 850px) {
+
+
+    .card {
+        flex-direction: column-reverse;
+        align-items: center;
+        height: 1000px;
+    }
+
+    .promoPic {
+        height: 30%;
+    }
+
+    .stats {
+        flex-direction: column;
+
+        align-items: center
+    }
 }
