@@ -113,9 +113,11 @@ body {
     line-height: 1.2;
     width: 65%;
     margin: 0px 70px 40px 50px;
+
 }
 
 .stats .statText {
+
     font-family: "lexend Deca", sans-serif;
     font-size: 0.60rem;
     font-weight: 400;
@@ -134,22 +136,49 @@ body {
 
 }
 
-@media (max-width: 850px) {
+@media (max-width: 800px) {
 
 
     .card {
         flex-direction: column-reverse;
         align-items: center;
         height: 1000px;
+        max-width: 400px;
+        margin-bottom: 40px;
     }
 
     .promoPic {
-        height: 30%;
+        height: 25%;
+        width: 340px;
+        background-image: url("images/image-header-mobile.jpg");
+        background-size: contain;
+
+    }
+
+    .promoHeader {
+        margin: 40px 10px 20px 25px;
+        font-size: 1.7rem;
+    }
+
+    .promoText {
+        margin: 10px 10px 20px 25px;
+    }
+
+    .info {
+        width: 341px;
     }
 
     .stats {
         flex-direction: column;
-
-        align-items: center
+        align-items: center;
+        line-height: 1;
+        font-size: 1.5rem;
     }
+
+
+    .statNum {
+        margin-top: 30px;
+    }
+
+
 }
